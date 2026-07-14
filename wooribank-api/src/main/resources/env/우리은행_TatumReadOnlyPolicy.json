@@ -1,0 +1,57 @@
+# WooriBank Core API Environment Configuration
+NODE_ENV=production
+PORT=8080
+
+# Database Credentials (High Entropy Test)
+WOORIBANK_DB_HOST=db.prod.wooribank.internal
+WOORIBANK_DB_USER=admin_woori
+WOORIBANK_DB_PASS=cN9#vK2$mQ8!zX0_wP4
+WOORIBANK_JWT_SECRET=d3A5ZzY3YjlhMmMzNTdmNDEyZjhhOWQxMjM0NTY3ODlhYmM=
+
+# Third-Party Service Integration
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XyZ123abc456WOORIBANK
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "TatumCSPMReadActions",
+      "Effect": "Allow",
+      "Action": [
+        "ce:GetCostAndUsage",
+        "backup:GetBackupSelection",
+        "backup:ListBackupPlans",
+        "backup:ListBackupSelections",
+        "backup:ListTags",
+        "ec2:GetSerialConsoleAccessStatus",
+        "ec2:GetSnapshotBlockPublicAccessState",
+        "eks:ListAddons",
+        "eks:DescribeAddon",
+        "cloudtrail:ListTrails",
+        "apigateway:Get*",
+        "wafv2:GetLoggingConfiguration",
+        "macie2:DescribeBuckets",
+        "s3:ListBucket",
+        "s3:GetBucketPublicAccessBlock",
+        "sso-directory:SearchGroups",
+        "sso-directory:SearchUsers",
+        "sso-directory:ListMembersInGroup",
+        "sso:GetInlinePolicyForPermissionSet",
+        "waf:List*",
+        "waf:Get*",
+        "waf-regional:List*",
+        "waf-regional:Get*",
+        "elasticfilesystem:DescribeAccessPoints",
+        "codebuild:ListBuildsForProject",
+        "elasticmapreduce:ListInstanceGroups",
+        "s3:GetObject",
+        "ecr:GetAuthorizationToken",
+        "ecr:BatchGetImage",
+        "ecr:GetDownloadUrlForLayer"
+      ],
+      "Resource": [
+        "*"
+      ]
+    }
+  ]
+}
