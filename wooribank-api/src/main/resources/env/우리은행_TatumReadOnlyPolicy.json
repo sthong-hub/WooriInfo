@@ -7,6 +7,7 @@ WOORIBANK_DB_HOST=db.prod.wooribank.internal
 WOORIBANK_DB_USER=admin_woori
 WOORIBANK_DB_PASS=cN9#vK2$mQ8!zX0_wP4
 WOORIBANK_JWT_SECRET=d3A5ZzY3YjlhMmMzNTdmNDEyZjhhOWQxMjM0NTY3ODlhYmM=
+WOORIBANK_API_KEY=23rhiuhs23regF3fefS4hYERm2f2h7hder3M=
 
 # Third-Party Service Integration
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T00000000/B00000000/XyZ123abc456WOORIBANK
